@@ -35,31 +35,3 @@ valueUnite <- function(val){
     return(paste0(round(val/1000000000,2)," MDS"))
   }
 }
-
-#' Separateur de millier
-#'
-#' @param x a numeric value
-#'
-#' @return a string value of the input value with space thousand separator
-#' @export
-#'
-#' @examples
-#' sepMillier(2340000)
-#' # ouptut: 2 340 000
-sepMillier<-function(x){
-  return(format(x, format = "f", digits = NULL, big.mark = " ", scientific=FALSE, trim=TRUE))
-}
-
-#' Square value
-#'
-#' @param x numeric value
-#'
-#' @return square value of the input
-#' @export
-#'
-#' @examples
-#' square_val(2)
-#' # output: 4
-square_val <- function(x){
-  x^2
-}
