@@ -9,5 +9,5 @@
 #' sepMillier(2340000)
 #' # ouptut: 2 340 000
 sepMillier<-function(x){
-  return(format(x, format = "f", digits = NULL, big.mark = " ", scientific=FALSE, trim=TRUE))
+  return(paste0(format(x, format = "f", digits = NULL, big.mark = " ", scientific=FALSE, trim=TRUE), "~"))
 }
